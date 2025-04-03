@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextCraft - Prototipagem de Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/konva@8.4.3/konva.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>TextCraft</h1>
+        <select id="fontSelector" onchange="changeFont()">
+            <option value="Roboto">Roboto</option>
+            <option value="Montserrat">Montserrat</option>
+            <option value="Source Code Pro">Source Code Pro</option>
+        </select>
+        <button onclick="addText()">Adicionar Texto</button>
+        <button onclick="exportHTML()">Exportar HTML/CSS</button>
+    </header>
+    <main>
+        <div id="container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
